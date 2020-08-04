@@ -4,7 +4,7 @@
   "description": "A NodeJS client for the OpenAI API",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test written by this lazy dev\" && exit 1"
+    "test": "mocha"
   },
   "author": "Vittorio <erlapso> Banfi ( https://github.com/erlapso )",
   "license": "MIT",

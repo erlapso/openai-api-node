@@ -62,7 +62,7 @@ Make a pull request :)
 
 ## Test
 
-We are using mocha to run a basic test. To have it succed, you need to put your api key in `test/completions.js`
+We are using mocha to run a basic test. To pass the test, you need to put your api key in `test/completions.js`
 
 ## License
 
