@@ -6,6 +6,11 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erlapso/openai-api-node.git"
+  },
+  "keywords": ["openai", "openaiapi", "gpt-3", "gpt3"],
   "author": "Vittorio <erlapso> Banfi ( https://github.com/erlapso )",
   "license": "MIT",
   "devDependencies": {

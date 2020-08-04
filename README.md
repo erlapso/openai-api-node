@@ -54,7 +54,9 @@ You will need an API key to initialize the object. You can also pass the followi
 
 CompletionsCreate accepts the following parameters. Only the first parameter is required:
 
-$ CompletionsCreate(prompt, max_tokens=5, engine="davinci")
+$ CompletionsCreate(prompt, max_tokens=5, engine="davinci", options={})
+
+You can also pass additional options as an object
 
 ## Contribute
 
