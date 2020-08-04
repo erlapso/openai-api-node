@@ -31,7 +31,7 @@ const OpenAIAPI = require('../lib/openaiapi');
 
 You will get an object similar to the following:
 
-```json
+```javascript
 {
   id: 'cmpl-yyyyyyyyyyy',
   object: 'text_completion',
