@@ -1,4 +1,4 @@
-# OpenAi API Node
+# OpenAI API Node
 
 A simple node wrapper for the OpenAI API.
 
@@ -6,7 +6,7 @@ A simple node wrapper for the OpenAI API.
 
 The API itself and this package are meant for development and research use only. Don't use this in production.
 
-If you don't have an API key, you need to request it at (openai.com)[https://beta.openai.com/]
+If you don't have an API key, you need to request it at [openai.com](https://beta.openai.com/)
 
 ## Install
 
@@ -16,6 +16,7 @@ $ npm install openai-api-node
 
 Quick start with a new completion:
 
+```javascript
 const OpenAIAPI = require('../lib/openaiapi');
   var openai = new OpenAIAPI("YOUR API KEY HERE")
   openai.CompletionsCreate("your starting prompt")
@@ -26,9 +27,11 @@ const OpenAIAPI = require('../lib/openaiapi');
     //The API returned an error
   })
 })
+```
 
 You will get an object similar to the following:
 
+```json
 {
   id: 'cmpl-yyyyyyyyyyy',
   object: 'text_completion',
@@ -43,18 +46,23 @@ You will get an object similar to the following:
     }
   ]
 }
+```
 
 ### Init
 
 You will need an API key to initialize the object. You can also pass the following parameters:
-  
- $ var openai = new OpenAIAPI("YOUR API KEY HERE", apiBase = "api.openai.com", version = "v1")
+
+```javascript
+var openai = new OpenAIAPI("YOUR API KEY HERE", apiBase = "api.openai.com", version = "v1")
+```
 
 ### CompletionsCreate
 
 CompletionsCreate accepts the following parameters. Only the first parameter is required:
 
-$ CompletionsCreate(prompt, max_tokens=5, engine="davinci", options={})
+```javascript
+CompletionsCreate(prompt, max_tokens=5, engine="davinci", options={})
+```
 
 You can also pass additional options as an object
 
