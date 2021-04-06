@@ -18,15 +18,20 @@ Quick start with a new completion:
 
 ```javascript
 const OpenAIAPI = require('../lib/openaiapi');
-  var openai = new OpenAIAPI("YOUR API KEY HERE")
-  openai.CompletionsCreate("your starting prompt")
+
+// Load your key from an environment variable or secret management service
+// (do not include your key directly in your code)
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+
+const openai = new OpenAIAPI(OPENAI_API_KEY)
+
+openai.CompletionsCreate("your starting prompt")
   .then(function(data) {
     //Do something with the data.
   })
   .catch(function(err) {
     //The API returned an error
   })
-})
 ```
 
 You will get an object similar to the following:
@@ -53,7 +58,11 @@ You will get an object similar to the following:
 You will need an API key to initialize the object. You can also pass the following parameters:
 
 ```javascript
-var openai = new OpenAIAPI("YOUR API KEY HERE", apiBase = "api.openai.com", version = "v1")
+// Load your key from an environment variable or secret management service
+// (do not include your key directly in your code)
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+
+const openai = new OpenAIAPI(OPENAI_API_KEY, apiBase = "api.openai.com", version = "v1")
 ```
 
 ### CompletionsCreate
