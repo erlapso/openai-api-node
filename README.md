@@ -1,3 +1,5 @@
+ATTENTION This package is deprecated. Use the official [OpenAI node library](https://github.com/openai/openai-node)
+
 # OpenAI API Node
 
 A simple node wrapper for the OpenAI API.
